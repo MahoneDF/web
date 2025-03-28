@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html dir="rtl" lang="fa">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>evaluator</title>
+    <link rel="stylesheet" href="p1.css">
+</head>
+<body>
+    <div class="container">
+        <div class="input-group">
+            <input type="number" id="fee" placeholder="fee">
+            <input type="number" id="count" placeholder="count">
+            <input type="number" id="discount" placeholder="discount">
+        </div>
+
+        <div class="results">
+            <div class="formula-box">
+                <label>نتیجه محاسبه 1: count * fee - discount</label>
+                <formula evaluator="count * fee - discount"></formula>
+            </div>
+            <div class="formula-box">
+                <label>نتیجه محاسبه 2: (count + fee) * 0.9</label>
+                <formula evaluator="(count + fee) * 0.9"></formula>
+            </div>
+            <div class="formula-box">
+                <label>نتیجه محاسبه 3: fee / (count - 5)</label>
+                <formula evaluator="fee / (count - 5)"></formula>
+            </div>
+        </div>
+    </div>
+
+    <script src="p1.js"></script>
+</body>
+</html>
